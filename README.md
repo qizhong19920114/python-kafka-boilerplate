@@ -19,9 +19,13 @@ This will launch a kafka service listening on port `9092` initialised with a Top
 
 ### Build dependencies
 
-* Python 2.7 
+* Python 2.7.14
 * `$ pip install -r requirements.txt`
 
 ### Configure and Run
-* `$ python3 kafka-example`
+* `$ python kafka-example`
+
+### Note
+* [Kafka](https://github.com/wurstmeister/kafka-docker) and [Zookeeper](https://github.com/wurstmeister/zookeeper-docker) Images. 
+* Modify the KAFKA_ADVERTISED_HOST_NAME in docker-compose.yml to match your docker host IP (Note: Do not use localhost or 127.0.0.1 as the host ip if you want to run __multiple__ brokers.)
 
