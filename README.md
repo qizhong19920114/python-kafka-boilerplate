@@ -1,6 +1,6 @@
-# Python Kafka Example
+# Python Kafka Boilerplate
 
-Example Python App Consuming and Producing to Kafka topic
+Python Kafka Consuming and Producing to Kafka topic
 
 ## Environment Setup
 
@@ -19,18 +19,9 @@ This will launch a kafka service listening on port `9092` initialised with a Top
 
 ### Build dependencies
 
-* Python 3 `$ brew install python3`
-* Virtual Env `$ sudo pip3 install virtualenv`
+* Python 2.7 
+* `$ pip install -r requirements.txt`
 
 ### Configure and Run
+* `$ python3 kafka-example`
 
-From the terminal enable & configure the application dependencies.
-* `$ virtualenv env`
-* `$ source env/bin/activate`
-* `(env) $ pip3 install -r requirements.txt`
-
-You can now run the application
-* `(env) $ python3 kafka-example`
-
-To leave the virtual Environment
-* `(env) $ deactivate`
